@@ -1,0 +1,24 @@
+{
+  "bootstrap_servers": "localhost:9092",
+  "topic": "bike_sharing_data",
+  "group_id": "pedal_pulse_consumer",
+  "auto_offset_reset": "earliest",
+  "enable_auto_commit": true,
+  "auto_commit_interval_ms": 1000,
+  "session_timeout_ms": 30000,
+  "max_poll_records": 1000,
+  "security_protocol": "PLAINTEXT",
+  "producer_config": {
+    "acks": "all",
+    "retries": 3,
+    "batch_size": 16384,
+    "linger_ms": 1,
+    "buffer_memory": 33554432,
+    "compression_type": "snappy"
+  },
+  "consumer_config": {
+    "fetch_min_bytes": 1,
+    "fetch_max_wait_ms": 500,
+    "max_partition_fetch_bytes": 1048576
+  }
+} 

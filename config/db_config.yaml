@@ -1,0 +1,61 @@
+database:
+  host: ${DB_HOST:-localhost}
+  port: ${DB_PORT:-5432}
+  name: ${DB_NAME:-bike_data}
+  user: ${DB_USER:-postgres}
+  password: ${DB_PASSWORD}
+  pool_size: 10
+  max_overflow: 20
+  pool_timeout: 30
+  pool_recycle: 3600
+
+tables:
+  trips:
+    name: bike_data
+    schema: public
+    columns:
+      - ride_id
+      - rideable_type
+      - started_at
+      - ended_at
+      - start_station_name
+      - start_station_id
+      - end_station_name
+      - end_station_id
+      - start_lat
+      - start_lng
+      - end_lat
+      - end_lng
+      - member_casual
+      - trip_duration_minutes
+      - hour
+      - day_of_week
+      - month
+      - year
+      - created_at
+      - updated_at
+
+  stations:
+    name: bike_stations
+    schema: public
+    columns:
+      - station_id
+      - station_name
+      - latitude
+      - longitude
+      - capacity
+      - created_at
+      - updated_at
+
+  forecasts:
+    name: demand_forecasts
+    schema: public
+    columns:
+      - forecast_id
+      - station_id
+      - forecast_date
+      - predicted_demand
+      - confidence_lower
+      - confidence_upper
+      - model_version
+      - created_at 
