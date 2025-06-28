@@ -1,4 +1,4 @@
-# Pedal Pulse - Bike Sharing Analytics Platform
+# Pedal Pulse - Bike Sharing Analytics 
 
 A comprehensive analytics platform for bike-sharing data processing, real-time streaming, and demand forecasting.
 
