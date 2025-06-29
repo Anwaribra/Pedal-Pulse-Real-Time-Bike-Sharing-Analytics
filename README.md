@@ -1,6 +1,20 @@
 # Pedal Pulse - Bike Sharing Analytics 
 
-A comprehensive analytics platform for bike-sharing data processing, real-time streaming, and demand forecasting.
+Transforming bike-sharing data into actionable insights through advanced analytics and machine learning 
+
+
+## Architecture
+
+```
+CSV Data → Spark Processing → PostgreSQL → ML Models → Dashboards
+    ↓           ↓               ↓           ↓           ↓
+Raw Files → ETL/Streaming → Data Warehouse → Predictions → Insights
+```
+
+
+
+
+
 
 ##  Data Pipeline
 
@@ -14,10 +28,39 @@ A comprehensive analytics platform for bike-sharing data processing, real-time s
 
 ##  Features
 
-- **Batch ETL Processing**: Clean and transform historical bike-sharing data
-- **Real-time Streaming**: Process live data using Kafka and Spark Streaming
-- **Demand Forecasting**: ML models for predicting bike demand at stations
-- **Interactive Dashboards**: Grafana and Power BI visualizations
-- **Workflow Orchestration**: Apache Airflow for pipeline scheduling
-- **Data Warehousing**: PostgreSQL integration for processed data
+###  **Data Processing**
+- **Batch ETL Pipeline**: Clean and transform historical bike-sharing data
+- **Spark Streaming**: Real-time data processing from CSV files
+- **Data Validation**: Automated quality checks and duplicate removal
+- **PostgreSQL Integration**: Scalable data warehousing
+
+### **Machine Learning**
+- **Demand Forecasting**: Predict bike availability at stations
+- **Trip Duration Prediction**: ML-powered trip time estimation
+- **Real-time Predictions**: Live scoring with trained models
+- **Model Performance Tracking**: Accuracy metrics and monitoring
+
+###  **Analytics & Visualization**
+- **Station Performance**: Utilization rates and trip patterns
+- **User Behavior Analysis**: Member vs casual user insights
+- **Seasonal Trends**: Time-based usage patterns
+
+### **Workflow Management**
+- **Apache Airflow**: Automated pipeline scheduling
+- **Docker Deployment**: Containerized application stack
+- **Error Handling**: Robust retry mechanisms and monitoring
+- **Configuration Management**: Environment-based settings
+
+
+
+
+
+
+
+
+
+
+
+
+
 
