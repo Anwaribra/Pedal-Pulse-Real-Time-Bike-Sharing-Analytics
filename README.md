@@ -7,8 +7,6 @@ Transforming bike-sharing data into actionable insights through advanced analyti
 
 ```
 CSV Data → Spark Processing → PostgreSQL → ML Models → Dashboards
-    ↓           ↓               ↓           ↓           ↓
-Raw Files → ETL/Streaming → Data Warehouse → Predictions → Insights
 ```
 
 
