@@ -1,16 +1,15 @@
-# Pedal Pulse - Bike Sharing Analytics Platform
+# Pedal Pulse - Bike Sharing Analytics 
 
-A comprehensive analytics platform for bike-sharing data processing, real-time streaming, and demand forecasting.
+A comprehensive analytics platform for bike-sharing data processing 
 
 ##  Data Pipeline
 
 1. **Data Ingestion**: Raw bike-sharing data from CSV files
 2. **Data Cleaning**: Remove duplicates, handle missing values, validate data
 3. **Data Transformation**: Calculate trip duration, extract time features
-4. **Real-time Processing**: Stream live data through Kafka
-5. **Data Warehousing**: Store processed data in PostgreSQL
-6. **ML Forecasting**: Train and deploy demand prediction models
-7. **Visualization**: Create interactive dashboards
+4. **Data Warehousing**: Store processed data in PostgreSQL
+5. **ML Forecasting**: Train and deploy demand prediction models
+6. **Visualization**: Create interactive dashboards 
 
 
 ##  Features

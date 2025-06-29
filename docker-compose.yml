@@ -1,0 +1,16 @@
+services:
+  spark:
+    build: .
+    container_name: spark_streaming
+    ports:
+      - "4040:4040"
+    environment:
+      - SPARK_LOCAL_IP=spark
+      - POSTGRES_HOST=host.docker.internal
+      - POSTGRES_DB=bike_data
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=2003
+    volumes:
+      - ./pipeline:/app/pipeline
+      - ./data:/app/data
+      - ./config:/app/config
