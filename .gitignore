@@ -1,17 +1,6 @@
 .env 
 
 
-pipeline/spark_streaming_job.py
-pipeline/kafka_producer.py
-
-
-
-dags/ 
-pipeline/
-
-
-
-
 
 
 
